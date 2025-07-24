@@ -49,7 +49,9 @@ const ChatHeader = () => {
   if (!contact_detail) {
     return (
       <div className="chat-header">
+        <Link to={"/contacts"}>
         <h2>Selecciona un chat</h2>
+        </Link>
       </div>
     );
   }
