@@ -1,0 +1,10 @@
+.contenedor-padre{
+    display: flex;
+    flex-direction: row;
+}
+
+.mensajes{
+    width: 1000px;
+    height: 600px;
+    border: solid 1px black;
+}

@@ -1,0 +1,74 @@
+.chat-message {
+  max-width: 60%;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 8px;
+  display: flex;
+  flex-direction: column;
+  word-wrap: break-word;
+  
+}
+/* Tus mensajes (derecha, verde) */
+.my-message {
+  align-self: flex-end;
+  background-color: #dcf8c6;
+  border-bottom-right-radius: 0;
+}
+
+/* Mensajes de otros (izquierda, gris) */
+.other-message {
+  align-self: flex-start;
+  background-color: #ffffff;
+  border-bottom-left-radius: 0;
+}
+
+/* Contenido del mensaje */
+.message-content {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Texto del mensaje */
+.message-text {
+  font-size: 15px;
+  color: #111;
+}
+
+/* Metadata (hora + status) */
+.message-meta {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 11px;
+  color: gray;
+  gap: 4px;
+  margin-top: 4px;
+}
+
+
+
+/* Icono de estado (✔✔) */
+.message-status {
+  color: #4fc3f7;
+}
+
+/* Botón de eliminar */
+.delete-button {
+  width: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  opacity: 0.6;
+}
+
+.delete-button:hover {
+  opacity: 1;
+}
+
+.message-image {
+   width: 80%;
+   
+  border-radius: 8px;
+ 
+  display: block;
+}
