@@ -177,3 +177,34 @@
   }
 }
 
+.responsive-float-btn {
+  position: fixed;
+  top: 50%;
+  left: 1rem; /* ← cambia esto */
+  transform: translateY(-50%);
+  z-index: 1000;
+  display: none;
+  background-color: #25d366;
+  color: white;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.responsive-float-btn .arrow-icon {
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Mostrar solo en pantallas menores a 600px */
+@media (max-width: 600px) {
+  .responsive-float-btn {
+    display: flex;
+  }
+}

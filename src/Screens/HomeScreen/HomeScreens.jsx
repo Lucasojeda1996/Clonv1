@@ -6,7 +6,7 @@ import { MessagesContext } from '../../Context/MessagesContext'
 import { useEffect } from 'react'
 import LoaderSpinner from '../../Componentes/LoaderSpinner/LoaderSpinner'
 import './HomeScreens.css'
-
+import { IoArrowBack } from 'react-icons/io5'
 import { ContactDetailContext } from '../../Context/ContactDetailContext'
 import Sidebar from '../../Componentes/SideBar/SideBar'
 
@@ -35,6 +35,9 @@ export default function HomeScreens() {
         <NewMessageForm />
       
       </div>
+      <Link to="/contacts" className="responsive-float-btn" aria-label="Ir a contactos">
+  <span className="arrow-icon"> <IoArrowBack size={24} color="#fff" /></span>
+</Link>
       </div>
   )
     
