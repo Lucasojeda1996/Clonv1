@@ -4,33 +4,42 @@
   max-width: 2000px;
   min-width: 400px;
  height: 100vh;
+   overflow: hidden;
+   /*modoificado*/
   
 }
 
 .sidebar-wrapper {
-  width: 30%;
+  width: 350px;
   min-width: 300px;
   max-width: 400px;
   border-right: 1px solid #ccc;
    height: 100vh; /* Altura completa */
   overflow-y: auto;
-   
+ 
+   /*modoificado*/
 
 }
-
+ /* corregijo 19:46*/
 .chat-section {
   flex: 1;
   display: flex;
   flex-direction: column;
   background-color: #f0f0f0;
   height: 100vh;
+  ;
+ 
    overflow-y: auto;
-   
+     flex-grow: 1;
+   padding-left: 10px;  
+   padding-right: 10px; 
  
 }
 
 .chat-header-wrapper {
   background-color: #e4e4e4;
+  
+  height: 60px;
   padding:  12px; /* MÁS FINO */
   border-bottom: 1px solid #ddd;
   display: flex;
