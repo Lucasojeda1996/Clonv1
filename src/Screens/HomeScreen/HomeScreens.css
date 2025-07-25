@@ -1,3 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body {
+  height: 100%;
+  /* evita scroll general si no lo necesitás */
+}
+
+
 .home-wrapper {
   display: flex;
   
@@ -38,9 +49,9 @@
 }
 
 .chat-header-wrapper {
-  background-color: #e4e4e4;
+  background-color: #76a37aa2;
   width: 100%;
-  height: 60px;
+  height: 90px;
   padding:  12px; /* MÁS FINO */
   border-bottom: 1px solid #ddd;
   display: flex;
@@ -58,6 +69,8 @@
 .chat-header{
   display: flex;
   flex-direction: row;
+  
+  align-items: center;
   gap:10px;
 }
 
@@ -69,7 +82,7 @@
 
 .chat-header-content {
   display: flex;
-  align-items: center;
+
   gap: 10px;
 }
 

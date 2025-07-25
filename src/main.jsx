@@ -6,7 +6,6 @@ import { BrowserRouter } from 'react-router'
 import ContactContextProvider from './Context/ContactContext.jsx'
 import ContactDetailContextProvider from './Context/ContactDetailContext.jsx'
 
-
 createRoot(document.getElementById('root')).render(
   <BrowserRouter>
     <ContactContextProvider>

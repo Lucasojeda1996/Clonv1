@@ -28,7 +28,7 @@ export default function HomeScreens() {
       <div className="chat-section">
         <header className="chat-header-wrapper">
           <Link to={`/contacts/${contact_id}/detail`} className="chat-header-link">
-          <span><ChatHeader /><span className="chat-info-tooltip">Haz click para ver la información del contacto</span></span>
+          <span><ChatHeader /></span>
           </Link>
        </header>
         <Chat />

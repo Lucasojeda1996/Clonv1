@@ -24,11 +24,7 @@ export default function Messege({ emisor, hora, id, texto, status , imagen }) {
     )}
         
       </div>
-{isUser && (
-    <button className="delete-button" onClick={() => handleEliminarMensaje(id)}>
-      🗑
-    </button>
-  )}
+
 
       
     </div>
