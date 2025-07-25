@@ -32,7 +32,7 @@ export default function HomeScreens() {
           </Link>
        </header>
         <Chat />
-        <NewMessageForm />
+        <NewMessageForm className="formulario-fijo"/>
       
       </div>
       <Link to="/contacts" className="responsive-float-btn" aria-label="Ir a contactos">
@@ -51,9 +51,9 @@ const ChatHeader = () => {
 
   if (!contact_detail) {
     return (
-      <div className="chat-header">
+      <div>
         <Link to={"/contacts"}>
-        <h2>Selecciona un chat</h2>
+        <h2 >Selecciona un chat</h2>
         </Link>
       </div>
     );

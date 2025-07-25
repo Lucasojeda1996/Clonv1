@@ -3,13 +3,10 @@ import ContactItem from "../ContactItem/ContactItem"
 import { ContactContext } from "../../Context/ContactContext"
 import LoaderSpinner from "../LoaderSpinner/LoaderSpinner"
 import "./ContactList.css"
-const ContactsList = () => {
-  const { contacts, isLoadingContacts } = useContext(ContactContext)
-
-  if (isLoadingContacts) {
-    return <LoaderSpinner />
+const ContactsList = ({ contacts }) => {
+  if (!contacts || contacts.length === 0) {
+    return <div className="no-results">No se encontraron contactos</div>
   }
-
   return (
     <div className="contacts-lists">
       {contacts.map((contact) => {
